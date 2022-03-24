@@ -8,7 +8,7 @@ body {
   background-color: midnightblue;
   font-size: 2vw;
   scroll-behavior: smooth;
-  color: white;
+  color: black;
 }
 
 main {
@@ -16,7 +16,6 @@ main {
   min-width: 60%;
   margin: 0 auto;
   flex-direction: column;
-  background-color: midnightblue;
   justify-content: center;
 }
 
@@ -27,18 +26,21 @@ h1 {
   word-spacing: 0.5em;
   font-size: 5.9vw;
   background-color: white;
-  color: midnightblue;
+  color: black;
+  padding: 0.5em 0.5em 0;
 }
 h2 {
   font-family: "Arial Narrow";
   padding: 0.2em;
-  border: 0.1em solid white;
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 1.5em;
 }
 
 h3 {
   text-align: center;
-  background-color: black;
-  width: 100%;
 }
 
 nav {
@@ -89,22 +91,19 @@ footer {
 .aboutMeGroup {
   font-family: arial;
   display: flex;
-  border: 1px solid white;
   align-items: center;
   background-color: white;
 }
 .aboutMeInfo {
   flex-grow: 1;
-  border: 1px solid white;
   text-align: start;
-  text-indent: 1em;
+  text-indent: 2em;
   padding: 0.5em;
   line-height: 1.2em;
-  background-color: black;
-  color: white;
+  color: black;
   align-self: flex-start;
-  margin-top: 0.3em;
-  border-radius: 0.5em 0.5em 0;
+  border-radius: 0.5em;
+  font-weight: 500;
 }
 
 .pfp {
@@ -113,41 +112,51 @@ footer {
   margin: 0.3em;
   padding: 0.5em;
   background-color: black;
+  transition: 500ms;
+}
+
+.pfp:hover {
+  transform: scale(1.05);
 }
 
 .projectGroup {
   display: flex;
   background-color: white;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 1.5em 0.5em;
 }
 
 .projectInfo {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  background-color: midnightblue;
   align-items: center;
-  padding: 0.3em;
-  margin: 1em 0;
-  color: white;
-  margin: 0 0.1em;
+  transition: 250ms linear;
+  padding: 0.1em;
+}
+
+.projectInfo:hover {
+  transform: scale(1.05);
 }
 
 .projectInfo img {
-  height: 15vw;
-  width: 100%;
-  margin: 0 auto;
+  max-width: 20vw;
+  height: 50%;
 }
 
 .projectInfo p {
   text-align: center;
-  margin: 0.5em 1em 0;
-  transition-duration: 400ms;
+  margin-top: 0.2em;
+  padding: 0.2em;
+  transition-duration: 200ms;
   transition-timing-function: linear;
+  color: white;
+  background-color: black;
+  border-radius: 0.5em;
+  width: 100%;
 }
 
 .projectInfo p:hover {
   transform: scale(1.1);
-  color: aqua;
 }
 .skillsGroup {
   display: flex;
