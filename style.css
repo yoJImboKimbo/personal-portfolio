@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: midnightblue;
+  font-size: 2vw;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+main {
+  max-width: 80%;
+  min-width: 60%;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: midnightblue;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium";
+  text-transform: uppercase;
+  word-spacing: 0.5em;
+  font-size: 5.9vw;
+  background-color: white;
+  color: midnightblue;
+}
+h2 {
+  font-family: "Arial Narrow";
+  padding: 0.2em;
+  border: 0.1em solid white;
+}
+
+h3 {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0.1em 0;
+  background-color: white;
+  padding-bottom: 1em;
+  color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  font-family: "Arial narrow";
+  justify-self: flex-end;
+  padding-right: 0.5em;
+  border: 1px solid white;
+}
+
+nav li {
+  justify-content: center;
+  padding-left: 0.5em;
+  font-weight: bold;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+nav li:hover {
+  color: midnightblue;
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 0.5em;
+}
+
+/* General Styles ▲*/
+
+/* Class Styles  ▼*/
+
+.aboutMeGroup {
+  font-family: arial;
+  display: flex;
+  border: 1px solid white;
+  align-items: center;
+  background-color: white;
+}
+.aboutMeInfo {
+  flex-grow: 1;
+  border: 1px solid white;
+  text-align: start;
+  text-indent: 1em;
+  padding: 0.5em;
+  line-height: 1.2em;
+  background-color: black;
+  color: white;
+  align-self: flex-start;
+  margin-top: 0.3em;
+  border-radius: 0.5em 0.5em 0;
+}
+
+.pfp {
+  max-width: 20vw;
+  flex-grow: 0;
+  margin: 0.3em;
+  padding: 0.5em;
+  background-color: black;
+}
+
+.projectGroup {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.projectInfo {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: midnightblue;
+  align-items: center;
+  padding: 0.3em;
+  margin: 1em 0;
+  color: white;
+  margin: 0 0.1em;
+}
+
+.projectInfo img {
+  height: 15vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projectInfo p {
+  text-align: center;
+  margin: 0.5em 1em 0;
+  transition-duration: 400ms;
+  transition-timing-function: linear;
+}
+
+.projectInfo p:hover {
+  transform: scale(1.1);
+  color: aqua;
+}
+.skillsGroup {
+  display: flex;
+  background-color: white;
+  height: 30vw;
+  justify-content: center;
+}
+
+.skillsGroup img {
+  height: 80%;
+}
