@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --gradient: linear-gradient(#2876f9, #6d17cb);
+  --button-gradient: linear-gradient(gray, black);
+}
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: midnightblue;
+  background-image: var(--gradient);
   font-size: 2vw;
   scroll-behavior: smooth;
   color: black;
@@ -17,6 +21,7 @@ main {
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
 }
 
 h1 {
@@ -36,7 +41,7 @@ h2 {
   color: black;
   text-align: center;
   text-transform: capitalize;
-  padding-top: 1.5em;
+  padding-top: 1em;
 }
 
 h3 {
@@ -62,6 +67,7 @@ nav ul {
   justify-self: flex-end;
   padding-right: 0.5em;
   border: 1px solid white;
+  justify-content: space-around;
 }
 
 nav li {
@@ -73,7 +79,7 @@ nav li {
 }
 
 nav li:hover {
-  color: midnightblue;
+  color: #2876f9;
   transform: scale(1.1);
 }
 
@@ -82,6 +88,7 @@ footer {
   color: black;
   text-align: center;
   font-size: 0.5em;
+  padding-top: 25em;
 }
 
 /* General Styles ▲*/
@@ -93,23 +100,30 @@ footer {
   display: flex;
   align-items: center;
   background-color: white;
+  justify-content: space-around;
 }
+
+.infoGroup {
+  align-content: flex-start;
+}
+
 .aboutMeInfo {
-  flex-grow: 1;
   text-align: start;
-  text-indent: 2em;
-  padding: 0.5em;
+  text-indent: 1.5em;
+  padding: 0.3em;
   line-height: 1.2em;
   color: black;
   align-self: flex-start;
   border-radius: 0.5em;
-  font-weight: 500;
+  border-bottom: 0.2em solid black;
+
+  margin: 0 0.5em;
 }
 
 .pfp {
   max-width: 20vw;
   flex-grow: 0;
-  margin: 0.3em;
+  margin: 0.1em;
   padding: 0.5em;
   background-color: black;
   transition: 500ms;
@@ -121,9 +135,8 @@ footer {
 
 .projectGroup {
   display: flex;
-  background-color: white;
   justify-content: space-around;
-  padding: 1.5em 0.5em;
+  padding: 0 0.5em;
 }
 
 .projectInfo {
@@ -160,11 +173,11 @@ footer {
 }
 .skillsGroup {
   display: flex;
-  background-color: white;
-  height: 30vw;
   justify-content: center;
+  justify-content: space-around;
+  margin-top: 1em;
 }
 
-.skillsGroup img {
-  height: 80%;
+.fa-brands {
+  font-size: 8vw;
 }
