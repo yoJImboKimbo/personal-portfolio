@@ -19,7 +19,7 @@ body {
 main {
   max-width: 80%;
   min-width: 60%;
-  margin: 0 auto;
+  margin: 0.5em auto 0;
   flex-direction: column;
   justify-content: center;
   background: 0;
