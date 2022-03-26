@@ -111,13 +111,20 @@ footer {
   align-content: flex-start;
 }
 
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  width: 42%;
+}
+
 .aboutMeInfo {
+  flex-grow: 2;
   text-align: start;
-  text-indent: 1.5em;
-  padding: 0.3em;
+  text-indent: 1em;
   line-height: 1.2em;
   color: black;
   align-self: flex-start;
+  font-size: 1em;
   border-radius: 0.5em;
   border-bottom: 0.2em solid black;
   border-top: 0.075em solid black;
@@ -127,6 +134,7 @@ footer {
 }
 
 .pfp {
+  flex-grow: 1;
   max-height: 25%;
   max-width: 30%;
   flex-grow: 0;
