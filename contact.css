@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+main {
+  width: 80%;
+  margin: 50px auto;
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 0.2em 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  padding: 0.5em 0.5em;
+}
+
+p {
+  padding: 0.5em 1.2em;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+.contact-box {
+  display: flex;
+}
+
+.contact-right {
+  flex-basis: 40%;
+  padding: 1.5em;
+  background-color: aqua;
+}
+
+.contact-left {
+  flex-basis: 60%;
+  padding: 1.5em;
+}
+
+.contact-left h3 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact-right h3 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.input-row .input-group {
+  flex-basis: 45%;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 0.2em solid black;
+  outline: none;
+  padding-bottom: 0.5em;
+}
+
+textarea {
+  width: 100%;
+  border: 0.1em solid black;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+label {
+  margin-bottom: 0.3em;
+  display: block;
+}
+button {
+  width: 100px;
+  border: none;
+  outline: none;
+  height: 35px;
+  border-radius: 25px;
+  margin: 1em;
+  box-shadow: 0px 5px 5px 0px rgba(28, 0, 181, 0.3);
+}
+
+tr td:first-child {
+  padding-right: 20px;
+}
+
+tr td {
+  padding-top: 20px;
+}

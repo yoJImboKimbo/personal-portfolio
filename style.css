@@ -55,43 +55,33 @@ h3 {
 
 nav {
   display: flex;
-  align-items: center;
   width: 100%;
   justify-content: space-around;
   padding: 0.1em 0;
   background-color: white;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   color: black;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  flex-wrap: wrap;
-  font-family: "Arial narrow";
-  justify-self: flex-end;
-  padding-right: 0.5em;
-  border: 1px solid white;
-  justify-content: space-around;
-}
-
-nav li {
-  justify-content: center;
-  padding-left: 0.5em;
-  font-weight: bold;
+nav a {
+  font-weight: 500;
+  color: black;
   transition-duration: 0.2s;
   transition-timing-function: linear;
+  text-decoration: none;
 }
 
-nav li:hover {
-  color: #2876f9;
-  transform: scale(1.1);
+nav a:hover {
+  background: -webkit-linear-gradient(left, #2876f9, #0f5bb2, #6d17cb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.3);
 }
 
 footer {
   color: white;
   text-align: center;
-  font-size: 0.5em;
+  font-size: 0.3em;
   padding-top: 15em;
   margin-bottom: 0.5em;
 }
@@ -134,12 +124,13 @@ footer {
 }
 
 .pfp {
-  max-width: 35%;
+  max-height: 25%;
+  max-width: 30%;
   flex-grow: 0;
   margin: 0.5em;
   padding: 0.5em;
-  background-color: black;
   transition: 500ms;
+  background-image: var(--gradient);
 }
 
 .pfp:hover {
